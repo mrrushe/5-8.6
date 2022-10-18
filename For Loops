@@ -40,3 +40,99 @@ for y in range(10,-1,-1):
   print(y)
   time.sleep(1)
 print("Blast off!")
+
+#Exercise 4.2
+#Q1
+word = input("Enter a word: ")
+for i in word:
+  print(i)
+
+word = input("Enter a word: ")
+for i in range(len(word)):
+  print(word[i])
+  
+#Q2
+word = input("Enter a word: ")
+for i in word:
+  print("Letter: ",i,"  Index: ",word.index(i))
+
+word = input("Enter a word: ")
+for i in range(len(word)):
+  print("Letter: ",word[i],"  Index: ",i)
+
+#Q3
+word1 = input("Enter a word: ")
+word2 = input("Enter another word: ")
+new_word = word1+word2
+count=0
+for i in new_word:
+  if i=="e":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+word1 = input("Enter a word: ")
+word2 = input("Enter another word: ")
+new_word = word1+word2
+count=0
+for i in range(len(new_word)):
+  if new_word[i]=="e":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+#Q4
+word1 = input("Enter a word: ")
+count=0
+for i in word1:
+  if i=="a":
+    count+=5
+  elif i =="e":
+    count+=4
+  elif i =="i":
+    count+=3
+  elif i =="o":
+    count+=2
+  elif i =="u":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+word1 = input("Enter a word: ")
+count=0
+for i in range(len(word1)):
+  if word1[i]=="a":
+    count+=5
+  elif word1[i] =="e":
+    count+=4
+  elif word1[i] =="i":
+    count+=3
+  elif word1[i] =="o":
+    count+=2
+  elif word1[i] =="u":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+#Q5
+password = input("Enter a password: ")
+count=0
+for i in password:
+  if i.isdigit():
+    count+=1
+  else:
+    count+=0
+print(count)
+
+password = input("Enter a password: ")
+count=0
+for i in range(len(password)):
+  if password[i].isdigit():
+    count+=1
+  else:
+    count+=0
+print(count)
